@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Easy Profile Orange - templatemo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!-- 
+Easy Profile Template
+http://www.templatemo.com/tm-467-easy-profile
+-->
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="static/about/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/about/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/about/css/templatemo-orange.css">
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+	{% csrf_token %}
+<!-- header section -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<img src="media/{{hotel.images}}" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<hr>
+				<h1 class="tm-title bold shadow">{{hotel.name}}</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+
+<!-- education and languages -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-8 col-sm-12">
+			<div class="education">
+				<h3 class="white">Name:{{hotel.name}}</h3>
+				<h3 class="white">Email:{{hotel.email}}</h3>
+				<h3 class="white">Phone:{{hotel.phone_number}}</h3>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="languages">
+				<h2>Edit Profile</h2>
+					<ul>
+						<a action="UProfile"><li>Update Profile</li></a>
+						<a action="enter date"><li>Enter Date</li></a>
+					</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- javascript js -->	
+<script src="static/about/js/jquery.js"></script>
+<script src="static/about/js/bootstrap.min.js"></script>	
+<script src="static/about/js/jquery.backstretch.min.js"></script>
+<script src="static/about/	js/custom.js"></script>
+
+
+
+</body>
+</html>
